@@ -1,0 +1,12 @@
+.article {
+  width: 75%;
+  float: left;
+}
+.aside {
+  width: 25%;
+  float: left;
+}
+
+main {
+  overflow: auto;
+}
