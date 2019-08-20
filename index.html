@@ -35,6 +35,17 @@
           <p>With this post I've also updated how I'm getting my css for this page because I was getting some errors due to the external styelsheet I was trying to use has http for fonts instead of https. Then I learned that you have to put <code>@import url()</code> statements at the top of a css file.</p>
           <p>Small side note: I've been using Atom so far to work on this, but I've been using VS Code at work for my python projects and really like it. I'm eventually going to get it setup on my home computer to use it to work on this.</p>
         </article>
+        <hr class="article">
+
+        <article class="article">
+          <h2>Mobile CSS</h2>
+          <h4>2019-08-19</h4>
+          <p>After trying to send my last update to some friends, I realized my mobile game was lacking. Some quick research led me to <a href="https://www.thesitewizard.com/css/mobile-friendly-responsive-design.shtml">the site wizard</a>. I find it a little odd that this website with seemingly good html/css advice looks like it's from the 90s. This is a prime example of the difference between modern web design and the tech that is used to implement that design. Both are important. </p>
+          <p>When I started trying to implement this, I ran into a problem with my layout. In order to get my border to work the way I wanted originally, I had my <code>&ltaside&gt</code> in the wrong spot. (I just learned to use &amp;lt if i want the angle brackets to be rendered, since I'm currently composing this directly in html, then I had to learn to write &ampamp. This is a recursive pattern because I have to type and extra 'amp' every time I want to show what I typed before!).</p>
+          <p>What a tangent... In order to get my html code in a more standard looking hierarchy, I had to make a concession on the default background and border that comes with my theme. I'm pleased on the comprimise I found. Now I was able to properly implement the CSS to get mobile looking better. That was actually pretty straightforward and worked after following the information from 'the site wizard'. I spent some time messing with my margins and paddings to get more things looking a little cleaner. I also ran into a horizontal scroll bar and a quick search found a fix for that. I still don't have a great place for the side nav in the mobile layout, but overall this was a good improvement. It was a good CSS day.</p>
+          <img src="css.gif" alt="">
+          <p>I wonder how much of this knowledge will come in handy once I start using the static site generator...</p>
+        </article>
       </main>
       <aside class="aside">
         <ul>
