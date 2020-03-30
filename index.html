@@ -1,57 +1,31 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>pocketry.github.io</title>
-    <meta name = 'robots' content = 'noindex' charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="master.css">
-  </head>
-  <body>
-    <header>
-      <h1>Tech Learnings(?)</h1>
-    </header>
-      <main class="main">
-        <article class="article">
-          <h2>Introduction</h2>
-          <h4>2019-08-04</h4>
-          <p>I've been working at a software company as a product owner/manager for about 4 years now. I've learned SQL, Git, Python, HTML and CSS (for very simple modifications).</p>
-          <p>I've been saying for a while my next topic should be how to build a website. This is that site. It will be kind of like a blog where I can discuss things I've learned, things I think I want to share, and the journey of learning how to build a multipage website. Today I spent about an hour getting this page layout in decent shape and adding a few links.</p>
-          <p>When I started looking at ways to do this easily, I eventually came across <a href="https://pages.github.com/" target = 'blank'>GitHub Pages</a> and thought it would be a great way to start a static site like this one.</p>
-        </article>
-        <hr class="article">
-        <article class="article">
-          <h2>Project Research</h2>
-          <h4>2019-08-15</h4>
-          <p>After I spent some time getting the layout here into a state that I was satisfied with, I began thinking about how to upkeep that layout if I'm supporting multiple pages. If my posts were going to be on pages with unique, permanent URLs then I would need a way to keep the title, sidebar, and general layout in sync accross all the pages.</p>
-          <p>I knew this was a problem that has many readily available solutions, but before I started doing research I wanted to think about how I could do it. I thought I could use a little javascript to insert some master html into every page. I quickly realized that the javascript to keep a multipage site consistent is a little hacky. Based on some of the advice I had seen on <a href="https://tildes.net" target = 'blank'>tildes.net</a>, I should be doing this with little to no javascript. Since I was building a static pages and don't need a database, I didn't think I would need any kind of server code. Then I found out about <a href="https://en.wikipedia.org/wiki/Web_template_system" target = 'blank'></a>static site generators.</p>
-          <p>I should have figured this out sooner because GitHub Pages is based on Jekyll. I can't believe I didn't see it right away. I don't want to stick with GitHub pages because I want to learn how to setup and mantain a web server. I decided to go with <a href="https://blog.getpelican.com/" target = 'blank'>Pelican</a> since I'm already the most familiar with python. Here are the next several tasks I see that need to be accomlished.</p>
-          <ul>
-            <li>Pick a domain name I like</li>
-            <li>Create a "Hello World" site with Pelican</li>
-            <li>Deploy said site to a server (This is probably going to take the longest because I have the most to learn. I'm going to be using <a href="https://www.digitalocean.com/" target = 'blank'>DigitalOcean</a> to host.)</li>
-            <li>Port this over to Pelican</li>
-          </ul>
-          <p>I'll be trying to keep this page up to date as I work through this since this will probably take a while and I don't dedicate a ton of time to this.</p>
-          <p>With this post I've also updated how I'm getting my css for this page because I was getting some errors due to the external styelsheet I was trying to use has http for fonts instead of https. Then I learned that you have to put <code>@import url()</code> statements at the top of a css file.</p>
-          <p>Small side note: I've been using Atom so far to work on this, but I've been using VS Code at work for my python projects and really like it. I'm eventually going to get it setup on my home computer to use it to work on this.</p>
-        </article>
-        <hr class="article">
 
-        <article class="article">
-          <h2>Mobile CSS</h2>
-          <h4>2019-08-19</h4>
-          <p>After trying to send my last update to some friends, I realized my mobile game was lacking. Some quick research led me to <a href="https://www.thesitewizard.com/css/mobile-friendly-responsive-design.shtml">the site wizard</a>. I find it a little odd that this website with seemingly good html/css advice looks like it's from the 90s. This is a prime example of the difference between modern web design and the tech that is used to implement that design. Both are important. </p>
-          <p>When I started trying to implement this, I ran into a problem with my layout. In order to get my border to work the way I wanted originally, I had my <code>&ltaside&gt</code> in the wrong spot. (I just learned to use &amp;lt if i want the angle brackets to be rendered, since I'm currently composing this directly in html, then I had to learn to write &ampamp. This is a recursive pattern because I have to type and extra 'amp' every time I want to show what I typed before!).</p>
-          <p>What a tangent... In order to get my html code in a more standard looking hierarchy, I had to make a concession on the default background and border that comes with my theme. I'm pleased on the comprimise I found. Now I was able to properly implement the CSS to get mobile looking better. That was actually pretty straightforward and worked after following the information from 'the site wizard'. I spent some time messing with my margins and paddings to get more things looking a little cleaner. I also ran into a horizontal scroll bar and a quick search found a fix for that. I still don't have a great place for the side nav in the mobile layout, but overall this was a good improvement. It was a good CSS day.</p>
-          <img src="css.gif" alt="">
-          <p>I wonder how much of this knowledge will come in handy once I start using the static site generator...</p>
-        </article>
-      </main>
-      <aside class="aside">
-        <ul>
-          <li><a href="https://github.com/pocketry/pocketry.github.io" target = 'blank'>This page on GitHub</a></li>
-          <li><a href = 'http://thomasf.github.io/solarized-css/' target = 'blank'>Theme</a></li>
-        </ul>
-      </aside>
-  </body>
+<head>
+  <title>pocketry.github.io</title>
+  <meta name='robots' content='noindex, nofollow' charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="master.css">
+</head>
+
+<body>
+  <header>
+    <h1>Autumn Florence Foster</h1>
+  </header>
+  <main class="main">
+    <article class="article">
+      <h2>Virtual Memorial</h2>
+      <h4>April 4, 2020</h4>
+      <p>We'll be hosting a virtual memorial where we'll share the story of Autumn and open it up to anyone else that
+        wants to talk or has questions.</p>
+    </article>
+  </main>
+  <aside class="aside">
+    <ul>
+      <li><a href="https://github.com/pocketry/pocketry.github.io" target='blank'>This page on GitHub</a></li>
+      <li><a href='http://thomasf.github.io/solarized-css/' target='blank'>Theme</a></li>
+    </ul>
+  </aside>
+</body>
+
 </html>
