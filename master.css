@@ -8,7 +8,7 @@
 
 .mainGrid {
   display: grid;
-  grid-template: auto 1fr 100px / 1fr 250px;
+  grid-template: auto 1fr 100px / 1fr auto;
   max-width: 1000px;
   margin: auto;
   background-color: #fffff0;
@@ -37,7 +37,7 @@
 .subtitle {
   margin-top: 0px;
   font-family: 'Tangerine', cursive;
-  font-size: x-large;
+  font-size: xx-large;
 }
 
 /* .pageTitle {
@@ -46,4 +46,17 @@
 
 .sideImage {
   max-width: 250px;
+}
+
+@media screen and (min-width: 0px) and (max-width: 650px) {
+  .sidebar {
+    display: none;
+  }
+  .mainGrid {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  .content {
+    margin-right: 0px;
+  }
 }
