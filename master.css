@@ -48,6 +48,10 @@
   max-width: 250px;
 }
 
+.italics {
+  font-style: italic;
+}
+
 @media screen and (min-width: 0px) and (max-width: 650px) {
   .sidebar {
     display: none;
