@@ -8,7 +8,9 @@
 
 .mainGrid {
   display: grid;
-  grid-template: auto 1fr 100px / 1fr auto;
+  /* grid-template: auto 1fr 100px / 1fr; */
+  grid-template-rows: auto 1fr 100px;
+  grid-template-columns: 1000px;
   max-width: 1000px;
   margin: auto;
   background-color: #fffff0;
@@ -16,7 +18,7 @@
 }
 
 .pageHeader {
-  grid-column: 1 / span 2;
+  grid-area: 1 / 1 / 2 / 2;
   font-family: 'Tangerine', cursive;
   font-size: x-large;
 }
@@ -26,12 +28,12 @@
   margin-right: 20px;
 }
 
-.sidebar {
-  grid-area: 2 / 2 / 3 / 3;
-}
+/* .sidebar {
+  grid-area: 2 / 2 / 3 / 2;
+} */
 
 .pageFooter {
-  grid-area: 3 / 1 / 4 / 3;
+  grid-area: 3 / 1 / 4 / 2;
 }
 
 .subtitle {
@@ -52,13 +54,15 @@
   font-style: italic;
 }
 
-@media screen and (min-width: 0px) and (max-width: 650px) {
+@media screen and (min-width: 0px) and (max-width: 1000px) {
   .sidebar {
     display: none;
   }
   .mainGrid {
     margin-left: 20px;
     margin-right: 20px;
+    grid-template-columns: 100%;
+    /* max-width: 360px; */
   }
   .content {
     margin-right: 0px;
